@@ -1,5 +1,5 @@
 
-# 🧠 AWS Services Cheat Sheet (Cloud Practitioner Edition)
+# 🧠 AWS Services Cheat Sheet (Cloud Practitioner)
 
 ## ☁️ Compute
 | Service | Description |
