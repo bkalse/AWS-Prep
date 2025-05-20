@@ -216,3 +216,24 @@
 > **Region-level**: Service spans multiple AZs within a region for high availability (e.g., S3, Lambda)  
 > **Global**: Service operates across all regions (e.g., IAM, Route 53)
 
+## 🛡️ AWS Security Services Comparison
+| **Service**       | **Purpose**                                                       | **Scope**               | **Integrated With**                        | **Typical Use Case**                             |
+| ----------------- | ----------------------------------------------------------------- | ----------------------- | ------------------------------------------ | ------------------------------------------------ |
+| **AWS Shield**    | Protects against **DDoS attacks**                                 | Global (for Edge + ELB) | CloudFront, ALB/NLB, Route 53              | Prevent volumetric attacks on apps               |
+| **AWS WAF**       | **Web Application Firewall** to block malicious traffic           | Region-level or Edge    | ALB, CloudFront, API Gateway               | Block IPs, SQL injection, XSS                    |
+| **GuardDuty**     | **Threat detection** using ML and threat intel feeds              | Region-level            | VPC, CloudTrail, DNS logs, IAM             | Detect compromised instances, anomalous activity |
+| **AWS Detective** | **Investigates and visualizes** security findings                 | Region-level            | GuardDuty, AWS Config, CloudTrail          | Root cause analysis of suspicious activity       |
+| **AWS Cognito**   | **User authentication and authorization**                         | Region-level            | API Gateway, Lambda, App Clients           | Sign-up/sign-in for users, federated identities  |
+| **Security Hub**  | **Aggregates and prioritizes** findings from AWS security tools   | Region-level            | GuardDuty, Inspector, WAF, 3rd party tools | Central dashboard to track security posture      |
+| **Inspector**     | **Automated vulnerability management** for EC2 & container images | Region-level            | EC2, ECR, Lambda                           | Scan for CVEs and misconfigurations in workloads |
+
+## 🔎 Summary by Focus Area
+| **Security Area**             | **Best Service(s)**                                    |
+| ----------------------------- | ------------------------------------------------------ |
+| **DDoS protection**           | AWS Shield (Standard for free, Advanced for paid tier) |
+| **App-layer protection**      | AWS WAF                                                |
+| **Threat detection**          | Amazon GuardDuty                                       |
+| **Investigation/Forensics**   | AWS Detective                                          |
+| **Identity management**       | Amazon Cognito                                         |
+| **Security posture overview** | AWS Security Hub                                       |
+| **Vulnerability scanning**    | Amazon Inspector                                       |
