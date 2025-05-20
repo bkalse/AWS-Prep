@@ -124,6 +124,7 @@
 | EMR | Managed big data framework (Spark/Hadoop) |
 | Kinesis | Processing and analyzing real-time streaming data at scale |
 | MKS| Managed Apache Kafka Cluster |
+| QuickSight | BI Tool for creating visualizations and dashboards |
 
 ## 🤖 Machine Learning
 | Service | Description |
