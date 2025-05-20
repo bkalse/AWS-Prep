@@ -122,6 +122,8 @@
 | Redshift | Petabyte-scale data warehouse |
 | Data Pipeline | Move and transform data |
 | EMR | Managed big data framework (Spark/Hadoop) |
+| Kinesis | Processing and analyzing real-time streaming data at scale |
+| MKS| Managed Apache Kafka Cluster |
 
 ## 🤖 Machine Learning
 | Service | Description |
