@@ -152,3 +152,20 @@
 |---------|-------------|
 | WorkSpaces | Virtual desktops in the cloud |
 | AppStream 2.0 | Stream desktop apps from AWS |
+
+## 🛠️ AWS Support Plans Comparison
+| Feature / Plan                         | **Basic** (Free) | **Developer** | **Business** | **Enterprise** |
+|----------------------------------------|------------------|--------------------------|--------------------------|-------------------------------|
+| **24/7 Support for Critical Issues**   | ❌               | ❌                       | ✅                       | ✅                            |
+| **Response Time - General Guidance**   | —                | < 24 hrs                 | < 24 hrs                 | < 24 hrs                      |
+| **Response Time - System Impaired**    | —                | < 12 hrs                 | < 12 hrs                 | < 4 hrs                       |
+| **Response Time - Production Down**    | —                | —                        | < 1 hr                   | < 1 hr                        |
+| **Response Time - Business Critical**  | —                | —                        | —                        | < 15 mins                     |
+| **AWS Trusted Advisor**                | Limited          | Core Checks              | Full Checks              | Full Checks                   |
+| **AWS Health Dashboard**               | ✅               | ✅                       | ✅                       | ✅                            |
+| **Architecture Support**               | ❌               | ❌                       | General Guidance         | Tailored Guidance             |
+| **Account Management (TAM)**           | ❌               | ❌                       | ❌                       | ✅                            |
+| **Support Channels**                   | Docs, Forums     | Email                    | Chat, Phone, Email       | Chat, Phone, Email            |
+
+> ℹ️ Pricing scales with usage for Developer, Business, and Enterprise plans.
+
