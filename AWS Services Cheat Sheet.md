@@ -188,5 +188,31 @@
 | **Account Management (TAM)**           | ❌               | ❌                       | ❌                       | ✅                            |
 | **Support Channels**                   | Docs, Forums     | Email                    | Chat, Phone, Email       | Chat, Phone, Email            |
 
-> ℹ️ Pricing scales with usage for Developer, Business, and Enterprise plans.
+## 🌍 AWS Services by Availability Level
+| **Service**                   | **Availability Scope**                          | **Notes**                                                         |
+| ----------------------------- | ----------------------------------------------- | ----------------------------------------------------------------- |
+| **EC2 (Instances)**           | **AZ-level**                                    | Launched in a specific AZ; failures isolated to that AZ           |
+| **EBS (Volumes)**             | **AZ-level**                                    | Tied to a single AZ; cannot attach across AZs                     |
+| **EFS (File Storage)**        | **Region-level**                                | Accessible across multiple AZs within a region                    |
+| **S3 (Object Storage)**       | **Region-level**                                | Automatically replicated across multiple AZs                      |
+| **RDS (Single-AZ/Multi-AZ)**  | AZ-level (Single), Region-level (Multi-AZ)      | Choose based on high availability needs                           |
+| **Aurora**                    | **Region-level**                                | Supports multi-AZ and cross-region replication                    |
+| **DynamoDB**                  | **Region-level**                                | Fully managed and region-scoped with optional global tables       |
+| **Lambda**                    | **Region-level**                                | Runs in multiple AZs within a region                              |
+| **ECS (Fargate/EC2)**         | **AZ-level (EC2)** / **Region-level (Fargate)** | EC2 tasks tied to AZ, Fargate managed across AZs                  |
+| **EKS (Kubernetes)**          | **Region-level**                                | Nodes are in AZs; control plane is region-scoped                  |
+| **S3 Glacier / Deep Archive** | **Region-level**                                | Built on top of S3, same durability model                         |
+| **VPC**                       | **Region-level**                                | Subnets are created per AZ                                        |
+| **CloudFront (CDN)**          | **Global**                                      | Edge locations globally                                           |
+| **Route 53 (DNS)**            | **Global**                                      | Highly available global DNS                                       |
+| **CloudWatch**                | **Region-level**                                | Metrics and logs are region-scoped                                |
+| **IAM**                       | **Global**                                      | Accounts and permissions span all regions                         |
+| **AWS Organizations**         | **Global**                                      | Used for managing multi-account setups                            |
+| **SageMaker**                 | **Region-level**                                | Training and hosting occur in specific regions                    |
+| **Elastic Load Balancer**     | **Region-level**                                | Distributes traffic across AZs within a region                    |
+| **Global Accelerator**        | **Global**                                      | Provides a global IP that routes to endpoints in multiple regions |
+
+> **AZ-level**: Service operates within a single Availability Zone (e.g., EC2, EBS)  
+> **Region-level**: Service spans multiple AZs within a region for high availability (e.g., S3, Lambda)  
+> **Global**: Service operates across all regions (e.g., IAM, Route 53)
 
