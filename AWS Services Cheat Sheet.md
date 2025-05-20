@@ -37,6 +37,8 @@
 | CodePipeline | CI/CD automation pipeline |
 | Cloud9 | Cloud-based IDE |
 | X-Ray | Debug and trace applications |
+| AWS CodeStar | Unified UI for software development |
+| AWS CloudShell | Browser-based shell for managing AWS resources |
 
 ## 🧬 Database
 | Service | Description |
@@ -79,6 +81,9 @@
 | Inspector | Analyze security vulnerabilities |
 | Security Hub | Central security dashboard |
 | Control Tower | Set up and govern a secure AWS environment |
+| AWS Directory Service | Managed Microsoft AD |
+| Amazon GuardDuty | Threat detection and continuous security monitoring |
+| AWS Detective | Investigate security issues |
 
 ## 📊 Management & Governance
 | Service | Description |
@@ -125,6 +130,7 @@
 | Kinesis | Processing and analyzing real-time streaming data at scale |
 | MKS| Managed Apache Kafka Cluster |
 | QuickSight | BI Tool for creating visualizations and dashboards |
+| Amazon OpenSearch Service (Elasticsearch) | Managed search and analytics |
 
 ## 🤖 Machine Learning
 | Service | Description |
@@ -137,6 +143,9 @@
 | Polly | Text-to-speech |
 | Forecast | Time-series forecasting |
 | Personalize | Build recommendation engines |
+| Amazon Textract | Extract text and data from documents |
+| Amazon Augmented AI (A2I) | Human review for ML predictions |
+| Amazon Kendra | Intelligent search service |
 
 ## 🚚 Migration & Transfer
 | Service | Description |
