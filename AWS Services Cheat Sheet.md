@@ -28,6 +28,18 @@
 | Storage Gateway | Hybrid storage integration (on-prem to cloud) |
 | AWS Backup | Centralized backup across AWS services |
 
+| Storage Class               | Description                                               | Use Case                                |
+| --------------------------- | --------------------------------------------------------- | --------------------------------------- |
+| **S3 Standard**             | High durability, availability, and performance            | Frequently accessed data                |
+| **S3 Intelligent-Tiering**  | Automatically moves data between tiers based on usage     | Unknown or changing access patterns     |
+| **S3 Standard-IA**          | Infrequent Access – lower cost, but charged for retrieval | Backup, disaster recovery               |
+| **S3 One Zone-IA**          | Like Standard-IA, but stored in a single AZ               | Re-creatable infrequently accessed data |
+| **S3 Glacier Instant**      | Low-cost, immediate retrieval for archive data            | Long-term archive with fast access      |
+| **S3 Glacier Flexible**     | Archive with minutes to hours retrieval time              | Archives with less frequent access      |
+| **S3 Glacier Deep Archive** | Lowest-cost storage, retrieval in 12 hours                | Archival of rarely accessed data        |
+| **S3 Reduced Redundancy**   | ❌ Deprecated, not recommended anymore                     | (Legacy)                                |
+
+
 ## 🛠️ Developer Tools
 | Service | Description |
 |---------|-------------|
